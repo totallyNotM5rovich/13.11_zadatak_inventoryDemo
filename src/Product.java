@@ -12,7 +12,7 @@ public abstract class Product implements Comparable<Product> {
     public abstract String getDescription();
 
     public String getProductInfo() {
-        return "ID: " + productID + ", naziv: " + name + ", cijena: " + price + "€";
+        return "ID: " + productID + ", naziv: " + name + ", cijena: " + String.format("%.2f", price) + "€";
     }
 
     public String getName() {

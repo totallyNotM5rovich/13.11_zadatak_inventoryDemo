@@ -8,6 +8,6 @@ public class ElectronicItem extends Product{
 
     @Override
     public String getDescription() {
-        return "Naziv: " + getName() + ", trajanje jamstva: " + warrentyMonths + "mj., cijena: " + getPrice() + "€";
+        return "Naziv: " + getName() + ", trajanje jamstva: " + warrentyMonths + "mj., cijena: " + String.format("%.2f", getPrice()) + "€";
     }
 }

@@ -10,6 +10,6 @@ public class Book extends Product{
 
     @Override
     public String getDescription() {
-        return "Naslov: " + getName() + ", autor: " + author + " (ISBN: " + isbn + "), cijena: " + getPrice() + "€";
+        return "Naslov: " + getName() + ", autor: " + author + " (ISBN: " + isbn + "), cijena: " + String.format("%.2f", getPrice()) + "€";
     }
 }
